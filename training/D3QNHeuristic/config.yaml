@@ -1,0 +1,58 @@
+Parallelization Parameters:
+  rolloutDevice : "cpu"
+  lossDevice : "cuda"
+  replayBufferDevice : "cpu"
+  workerNumber : 8
+        
+Network Parameters :
+  commonLayersCellNumber : [64, 64]
+  outputLayerCellNumber : 32
+  initialBias : 2
+
+Optimizer Parameters :
+  learningRate : 0.0002
+  betas : [0.9, 0.999]
+  maxGradNorm : 1
+  weightDecay : 0.00001
+
+Training Loop Parameters :
+  totalTimeStep : 125_000
+  maxTimeStep : 1_000
+  rolloutBatchTimeStep : 32
+  updateEpoch : 8
+  updateBatchTimeStep : 512
+
+State Machine Parameters :
+  smName : Heur
+  stateMachineEps : 0
+
+State Exploration Parameters:
+  alphaOubli : 0.1
+  timeStepInit : 200
+  timeStepMax : 700
+  valeurMax : 0.3
+
+Test Parameters :
+  saveNumber : 10
+
+RL Parameters :
+  gamma : 0.99
+  nStep : 5
+  epsInit : 1
+  epsEnd : 0.005
+  lastStepAnnealing : 40_000
+  tau : 0.05
+  replayBufferSize : 50_000
+  initRandomStep : 10_000
+  rewardLoc : 0
+  rewardScale : 200
+
+Changing Parameters :
+  gridSearch : True
+  repetitionPerTuple : 5
+  parameterName : [["State Exploration Parameters", "valeurMax"], ["State Exploration Parameters", "timeStepInit"]]
+  Values : [[0.3], [200]]
+
+Plot Parameters : 
+  baseLineName : []
+  baseLineData : []

@@ -1,2 +1,2 @@
 # DRLDetectionFSM
-An algorithm coupling between DRL and an FSM to enhance learning process
+Coupling an FSM with DRL to improve interpretability and convergence

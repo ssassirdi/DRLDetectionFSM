@@ -1,0 +1,13 @@
+Global Parameters:
+  mainDir : articleData/TrainingsD3QNTestClustering
+  policyIndiceList : [1,2,3,4,5,6,7,8,9,10]
+  workerNumber : 18
+
+Policy Parameters :
+  commonLayersCellNumber : [64, 64]
+  outputLayerCellNumber : 32
+
+Run Parameters :
+  rolloutNumber : 100
+  maxTimeStep : 1000
+  device : "cpu"
