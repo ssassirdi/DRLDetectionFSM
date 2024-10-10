@@ -22,12 +22,15 @@ The "analysis/plots" scripts permits to create multiple plots :
 - The comparison of inference values with 95% confidence interval depending on the cluster it was assigned
 - The violin plot of the average timestep spent in each state over the whole training depending on the method used
 
+# Reproducibility
+Due to the size of the data generated for the article plot, it wasn't possible to add the source data. 
+All the hyperparameters used are the default values on the config.yaml files.
+
+If there is any questions or feedback, feel free to submit it.
+
 # Sources
 The initial algorithm on which this approach is based is from :
 Z. Wang, T. Schaul, M. Hessel, H. van Hasselt,M. Lanctot and N. de Freitas, “ Dueling NetworkArchitectures for Deep Reinforcement Learning, ”in JMLR, 2016.
 
 The main framework is TorchRL and from which the base implementation of D3QN was taken :
 A. Bou, M. Bettini, S. Dittert et al. “ TorchRL : Adata-driven decision-making library for PyTorch.” arXiv : 2306.00577.
-
-Due to the size of the data generated for the article plot, it wasn't possible to add the source data. 
-If there is any questions or feedback, feel free to submit it.
